@@ -1,0 +1,38 @@
+.container {
+  background-color: #fff;
+  border: 1px solid #5a5a5a;
+  border-radius: 5px;
+  height: auto;
+  min-height: 250px;
+  width: 400px;
+  z-index: 10;
+
+  &.active {
+    position: absolute;
+    user-select: none;
+  }
+}
+
+.draggable {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    background-color: #5073b4;
+    cursor: move;
+    height: max-content;
+
+    &-title {
+      color: #fff;
+      line-height: 30px;
+    }
+  }
+
+  &__body {
+    padding: 0 20px;
+
+    &-text-content {
+      text-align: left;
+    }
+  }
+}
