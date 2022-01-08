@@ -17,8 +17,7 @@
     },
     data() {
       return {
-        elementsAmount: 1000,
-        isOnDrag: false,
+        elementsAmount: 3,
       };
     },
   });
